@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    @apply mt-20 bg-color-secondary text-color-white text-2xl rounded-lg px-12 py-3 ease-in-out duration-200 border border-color-secondary hover:bg-transparent hover:text-color-primary
+}
+
+
+
+#contact-form .container {
+    border: solid rgba(50, 21, 21, 0.347);
+    border-radius: 10px;
+    width: 700px;
+    padding-bottom: 10px;
+  }
+  #contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  #contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px rgb(50, 21, 21, 0.347) solid;
+    border-radius: 5px;
+  }
+  
+  #contact-form textarea {
+    height: 250px;
+  }
+  
+  #contact-form input:focus,
+  #contact-form textarea:focus {
+    outline: none;
+    border-color: #27ae60;
+  }
+  
+  #contact-form .btn {
+    margin-top: 0px;
+  }

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/svgviewer-png-output (3).png" type="image/x-icon">
+    <meta name="description" Content="Discover a world of culinary delights with our recipe website. From mouthwatering main courses to delectable desserts, explore a vast collection of easy-to-follow recipes that cater to all tastes and dietary preferences. Unleash your inner chef, find cooking inspiration, and create memorable meals with our diverse range of recipes, cooking tips, and expert advice. Elevate your culinary journey with our recipe website and embark on a flavorful adventure in your kitchen.">
+    <meta name="keywords" content=" Food recipes, Cooking tips, Healthy eating, Gourmet cuisine, International cuisine, Vegetarian and vegan options
+    ">
+    <!-- cdn font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- style -->
+
+    
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+    <!-- scroll reveal -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="lib/swiper.css" />
+    <!-- swiper js -->
+    <script src="lib/swiper.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <title>NutriChefhub | Home</title>
+  </head>
+  <body class="dark:bg-dmode-olive text-dmode-olive dark:text-color-white">
+    <header class="dark:bg-dmode-olive">
+      <!-- start of header -->
+
+      <!-- left navbar -->
+      <div class="logo-brand tranform animate-bounce">
+        <a href="index.html" class="logo  dark:text-dmode-lightolive">
+          
+          <h2><i class="fa-solid fa-utensils dark:text-dmode-white"></i> NutriChefHub</h2>
+        </a>
+      </div>
+
+      <!-- right-navbar -->
+       
+      <nav class="navbar bg-color-white lg:bg-transparent dark:bg-dmode-olive">
+        <ul class="nav ">
+          <li><a href="index.html" class="bg-color-primary text-color-white dark:bg-dmode-white dark:text-dmode-olive ">Home</a></li>
+          <li class="dropdown">
+            <span class="dropbtn hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive mx-3 py-2 px-4 cursor-pointer">Recipes</span>
+            <div class="dropdown-content">
+              <a href="popular.html">Popular</a>
+              <a href="healthy.html">Healthy</a>
+              <a href="booster.html">Energy Boosting</a>
+            </div>
+          </li>
+          <li><a href="about.html" class=" hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">About</a></li>
+          <li><a href="blogs.html" class="hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">Blogs</a></li>
+          <li><a href="contact.html" class="hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">Contact</a></li>
+          
+        </ul>
+      </nav>
+
+
+      <!-- icons -->
+      <div class="icons">
+        <i id="fa-bars" class="fa-solid fa-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <i id="dark-mode" class="fas fa-moon"></i>
+      </div>
+    </header>
+
+     <!-- Search Recipes -->
+    <section>
+      <form action="search.html" id="search-form">
+        <div class="search-bar flex justify-center">
+          <input
+            type="search"
+            placeholder="Search Recipe"
+            text="text"
+            name="search-term"
+            id="search-term"
+          />
+          <button
+            for="search-box"
+            class="fas fa-search text-color-white cursor-pointer text-5xl hover:text-danger"
+            class="text-"
+          ></button>
+          <i class="fas fa-times" id="close"></i>
+        </div>
+      </form>
+    </section>
+      
+    
+
+    <main>
+      <section class="md:h-screen ">
+        <div id="default-carousel" class="relative w-full h-full top-48 md:top-36 lg:top-36 xl:top-0" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative top-10 rounded-lg md:h-96">
+               <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out h-full mt-32" data-carousel-item>
+                <img src="image/index-img/hero1.png" class="absolute object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 " alt="...">
+                <div class="flex flex-col justify-center items-center z-50  relative -top-10 sm:-top-10 md:top-28 lg:top-48 text-center">
+                  <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">Welcome to</h2>
+                  <a href="#" class="logo ">
+
+                    <h2 class="z-50 sm:text-7xl md:text-8xl  text-center text-dmode-olive"><i class="fa-solid fa-utensils"></i> NutriChefHub</h2>
+                  </a>
+                 
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out h-full mt-32" data-carousel-item>
+                  <img src="image/index-img/hero2.png" class="absolute object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <div class="flex flex-col justify-start items-center z-50  relative  px-5 -top-28 sm:-top-10 md:top-28 lg:top-48 text-center">
+                    <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">Empowering Healthy</h2>
+                    <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">Living, One Recipe</h2>
+                    <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">at a Time</h2>
+                  </div>
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out h-full mt-32" data-carousel-item>
+                  <img src="image/index-img/hero3.png" class="absolute object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <div class="flex flex-col justify-start items-center z-50  relative left-0 px-5 -top-44 sm:-top-10 md:top-28 lg:top-48 text-center">
+                    <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">Discover the art of Nutricious</h2>
+                    <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">Cooking and Vibrang Living</h2>
+                    
+                  </div>
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out h-full mt-32" data-carousel-item>
+                  <img src="image/index-img/hero4.png" class="absolute object-cover block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                  <div class="flex flex-col justify-start items-center z-50  relative left-0 px-5 -top-28 sm:-top-10 md:top-28 lg:top-48 text-center">
+                    <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">Fuel Your Body</h2>
+                    <h2 class="caro-1 z-50 sm:text-7xl md:text-8xl  text-center text-dmode-lightolive">Nourish Your Life</h2>
+                    
+                    
+                  </div>
+              </div>
+          </div>
+          
+          <!-- Slider controls -->
+          <button type="button" class="absolute top-44 sm:top-52 md:-top-32 lg:top-20 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outl  ine-none" data-carousel-prev>
+              <span class=" inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+          <button type="button" class="absolute top-44 sm:top-52 md:-top-32 lg:top-20 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                  <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+        </div>
+        
+      </section>
+
+      
+          
+
+
+      <section class="relative   md:pt-28">
+        <div class="container lg:pt-14">
+          <div class="grid grid-cols-1 gap-5 lg:grid-cols-2">
+            <div class="col-span-1">
+              <img src="image/index-img/photo-1512621776951-a57141f2eefd.avif" alt="" class="rounded-xl">
+            </div>
+            
+            <div class="col-span-1 lg:pl-10 text-center">
+              <h2 class="text-7xl pt-40 font-bold xl:text-left dark:text-dmode-lightolive lg:pt-10 xl:pt-28">All About</h2>
+              <h2 class="text-7xl pb-20 font-bold xl:text-left dark:text-dmode-lightolive lg:pb-10 xl:pb-20">NutriChefHub</h2>
+              <p class="pb-20 text-center lg:text-left text-4xl lg:pb-10 xl:pb-20">Indulge in Health: Delight your taste buds with nutritious recipes, unlock vitality, and embark on a journey to a vibrant, fulfilling life.</p>
+              <a href="about.html" class="px-10 py-3 text-3xl bg-color-primary rounded-lg border border-color-primary  hover:text-color-white">Know More</a>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-5 py-28 lg:grid-cols-2">
+            <div class="col-span-1 text-center text-4xl order-2 sm:order-2 pt-20 lg:pr-10 lg:order-1">
+              <h2 class="text-7xl pt-20 pb-10 font-bold xl:text-left dark:text-dmode-lightolive">Eat Healthy and Live Longer</h2>
+              <p class="sm:text-left">
+              Get ready on a journey of vibrant flavors, wholesome ingredients, and nourishing recipes that will transform the way you eat and feel. Our website is a haven for health enthusiasts, offering a treasure trove of delicious, nutrient-rich recipes, detailed health factors, cooking tips, ingredient insights, and nutritional facts. Join us on this flavorful path to wellness and discover how the power of food can ignite your vitality and uplift your life.
+             </p>
+            </div>
+            
+            <div class="col-span-1 text-center order-1 sm:order-1 lg:order-2">
+              <img src="image/index-img/img-2.avif" alt="" class="h-full w-full rounded-xl">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class=" ">
+        <div class="container py-20">
+          <h2 class="text-7xl pb-10 text-center font-bold dark:text-dmode-lightolive">Features</h2>
+          <div class="grid grid-cols-1 justify-center items-center gap-5 md:grid-cols-3 text-center">
+            <div>
+              <img src="image/index-img/featrues-1.avif" alt="" class=" w-full rounded-lg">
+              <div class=""><h2 class="text-4xl py-6 md:text-3xl lg:text-2xl xl:text-4xl">Easy-To-Prepare Recipes</h2>
+              </div>
+            </div>
+            
+              
+              
+            
+            <div>
+              <img src="image/index-img/featrues-2.avif" alt="" class="h-full rounded-lg">
+              <div class=""><h2 class="text-4xl py-6 md:text-3xl lg:text-2xl xl:text-4xl">Step-By-Step Coooking Instruction</h2></div>
+            </div>
+            <div>
+              <img src="image/index-img/features-3.avif" alt="" class="w-full rounded-lg">
+              <div class=""><h2 class="text-4xl py-6 md:text-3xl lg:text-2xl xl:text-4xl">Good-to-know 
+                Nutritional Facts</h2></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>  
+
+    
+
+      
+        <footer>
+          <div class="container">
+              <div class="grid grid-cols-1 py-10 gap-10 md:grid-cols-2 lg:grid-cols-4">
+                  <div class="col-span-1">
+                      <div class="text-center text-dmode-olive">
+                          <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Services</h2>
+                          <a href="faq.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">FAQs</h3></a>
+                          <a href="contact.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Contact Us</h3></a>
+                          <a href="blogs.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Blogs</h3></a>
+    
+                      </div>
+                  </div>
+                  <div class="col-span-1">
+                      <div class="text-center text-dmode-olive">
+                          <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Contact Details</h2>
+                          <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Phone Number: (+63) 988 123 4567</h3>
+                          <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Telephone Number: (02) 846 9564</h3>
+                          <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Email: nutrichefhub@gmail.com</h3>
+                          <h1 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Address: 2265f Agoncillo St, Malate, Manila, 1004 Metro Manila</h1>
+                      </div>
+    
+                  </div>
+                  <div class="col-span-1">
+                      <div class="text-center text-dmode-olive">
+                          <h2 class="text-4xl text- pb-5 dark:text-dmode-lightolive">Legal</h2>
+                          <a href="privacy.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Privacy Policy</p></a>
+                          <a href="licensing.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Licensing</p></a>
+                          <a href="terms.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Terms & Conditions</p></a>
+                      </div>
+                  </div>
+                  <div class="col-span-1">
+                      <div class="text-center text-dmode-olive">
+                          <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Didn't Join Yet?</h2>
+                          <p class="text-2xl  py-3 dark:text-color-white">Let's create nutritious and healthy recipes together for our community.</p>
+                          <div class="pt-10">
+                              <a href="contact.html" class="text-dmode-olive text-xl py-3 px-3 bg-color-primary rounded-lg border border-color-primary hover:text-color-white dark:bg-color-primary dark:text-color-white hover:dark:bg-color-white hover:dark:text-dmode-olive">Join Our Community</a>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr>
+          <div class="container py-5 text-dmode-olive">
+              <div class="text-center text-xl dark:text-color-white">
+                  <p>Copyright © 2023 | NutriChefHub | Develop by Team MEND | Kodego BootCamp Tropang CharAt64 | All Rights Reserved</p>
+              </div>
+              
+          </div>
+      </footer>
+
+   
+      
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/navigate.js"></script>
+    <script src="js/search.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

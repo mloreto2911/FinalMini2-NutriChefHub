@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/svgviewer-png-output (3).png" type="image/x-icon">
+    <meta name="description" Content="Discover a world of culinary delights with our recipe website. From mouthwatering main courses to delectable desserts, explore a vast collection of easy-to-follow recipes that cater to all tastes and dietary preferences. Unleash your inner chef, find cooking inspiration, and create memorable meals with our diverse range of recipes, cooking tips, and expert advice. Elevate your culinary journey with our recipe website and embark on a flavorful adventure in your kitchen.">
+    <meta name="keywords" content=" Food recipes, Cooking tips, Healthy eating, Gourmet cuisine, International cuisine, Vegetarian and vegan options
+    ">
+    <!-- cdn font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- style -->
+
+    
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+
+    
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- scroll reveal -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="lib/swiper.css" />
+    <!-- swiper js -->
+    <script src="lib/swiper.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <title>NutriChefhub</title>
+  </head>
+  <body class="dark:bg-dmode-olive text-dmode-olive dark:text-color-white">
+    <header class="dark:bg-dmode-olive">
+      <!-- start of header -->
+
+      <!-- left navbar -->
+      <div class="logo-brand tranform animate-bounce">
+        <a href="index.html" class="logo  dark:text-dmode-lightolive">
+          
+          <h2><i class="fa-solid fa-utensils dark:text-dmode-white"></i> NutriChefHub</h2>
+        </a>
+      </div>
+
+      <!-- right-navbar -->
+       
+      <nav class="navbar bg-color-white lg:bg-transparent dark:bg-dmode-olive">
+        <ul class="nav ">
+          <li><a href="index.html" class=" hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">Home</a></li>
+          <li class="dropdown">
+            <span class="dropbtn hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive mx-3 py-2 px-4 cursor-pointer">Recipes</span>
+            <div class="dropdown-content">
+              <a href="popular.html">Popular</a>
+              <a href="healthy.html">Healthy</a>
+              <a href="booster.html">Energy Boosting</a>
+            </div>
+          </li>
+          <li><a href="about.html" class=" hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">About</a></li>
+          <li><a href="blogs.html" class="hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">Blogs</a></li>
+          <li><a href="contact.html" class="bg-color-primary text-color-white dark:bg-dmode-white dark:text-dmode-olive ">Contact</a></li>
+          
+        </ul>
+      </nav>
+
+
+      <!-- icons -->
+      <div class="icons">
+        <i id="fa-bars" class="fa-solid fa-bars"></i>
+        <i class="fas fa-search" id="search-icon"></i>
+        <i id="dark-mode" class="fas fa-moon"></i>
+      </div>
+    </header>
+
+     <!-- Search Recipes -->
+    <section>
+      <form action="search.html" id="search-form">
+        <div class="search-bar flex justify-center">
+          <input
+            type="search"
+            placeholder="Search Recipe"
+            text="text"
+            name="search-term"
+            id="search-term"
+          />
+          <button
+            for="search-box"
+            class="fas fa-search text-color-white cursor-pointer text-5xl hover:text-danger"
+            class="text-"
+          ></button>
+          <i class="fas fa-times" id="close"></i>
+        </div>
+      </form>
+    </section>
+
+    <!-- #############   Contact Us ############# -->
+    <section id="contact-form" class="py-10 mt-50">
+      <div class="container">
+        <h1 class="text-5xl text-center font-bold font-success">
+          <span class="text-dmode-olive dark:text-dmode-lightolive">Contact Us </span>
+        </h1>
+        <br />
+        <p class="text-center text-3xl">
+          We have 24/7 Customer Service Support
+        </p>
+        <br /><br /><br /><br />
+        <form action="process.php">
+          <div class="form-group text-2xl">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+          </div>
+
+          <div class="form-group text-2xl">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group text-2xl">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Please write your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="px-10 py-3 text-3xl bg-color-primary rounded-lg border border-color-primary  hover:text-color-white dark:bg-color-primary dark:text-color-white hover:dark:bg-color-white hover:dark:text-dmode-olive">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ###########Footer########################## -->
+    <footer>
+      <div class="container">
+          <div class="grid grid-cols-1 py-10 gap-10 md:grid-cols-2 lg:grid-cols-4">
+              <div class="col-span-1">
+                  <div class="text-center text-dmode-olive">
+                      <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Services</h2>
+                      <a href="faq.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">FAQs</h3></a>
+                      <a href="contact.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Contact Us</h3></a>
+                      <a href="blogs.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Blogs</h3></a>
+
+                  </div>
+              </div>
+              <div class="col-span-1">
+                  <div class="text-center text-dmode-olive">
+                      <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Contact Details</h2>
+                      <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Phone Number: (+63) 988 123 4567</h3>
+                      <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Telephone Number: (02) 846 9564</h3>
+                      <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Email: nutrichefhub@gmail.com</h3>
+                      <h1 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Address: 2265f Agoncillo St, Malate, Manila, 1004 Metro Manila</h1>
+                  </div>
+
+              </div>
+              <div class="col-span-1">
+                  <div class="text-center text-dmode-olive">
+                      <h2 class="text-4xl text- pb-5 dark:text-dmode-lightolive">Legal</h2>
+                      <a href="privacy.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Privacy Policy</p></a>
+                      <a href="licensing.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Licensing</p></a>
+                      <a href="terms.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Terms & Conditions</p></a>
+                  </div>
+              </div>
+              <div class="col-span-1">
+                  <div class="text-center text-dmode-olive">
+                      <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Didn't Join Yet?</h2>
+                      <p class="text-2xl  py-3 dark:text-color-white">Let's create nutritious and healthy recipes together for our community.</p>
+                      <div class="pt-10">
+                          <a href="contact.html" class="text-dmode-olive text-xl py-3 px-3 bg-color-primary rounded-lg border border-color-primary hover:text-color-white dark:bg-color-primary dark:text-color-white hover:dark:bg-color-white hover:dark:text-dmode-olive">Join Our Community</a>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <div class="container py-5 text-dmode-olive">
+          <div class="text-center text-xl dark:text-color-white">
+              <p>Copyright © 2023 | NutriChefHub | Develop by Team MEND | Kodego BootCamp Tropang CharAt64 | All Rights Reserved</p>
+          </div>
+          
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/navigate.js"></script>
+    <script src="js/search.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

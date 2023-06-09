@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="image/svgviewer-png-output (3).png" type="image/x-icon">
+    <meta name="description" Content="Discover a world of culinary delights with our recipe website. From mouthwatering main courses to delectable desserts, explore a vast collection of easy-to-follow recipes that cater to all tastes and dietary preferences. Unleash your inner chef, find cooking inspiration, and create memorable meals with our diverse range of recipes, cooking tips, and expert advice. Elevate your culinary journey with our recipe website and embark on a flavorful adventure in your kitchen.">
+    <meta name="keywords" content=" Food recipes, Cooking tips, Healthy eating, Gourmet cuisine, International cuisine, Vegetarian and vegan options
+    ">
+    <!-- cdn font-awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- style -->
+
+    
+    <!-- flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    <!-- scroll reveal -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="lib/swiper.css" />
+    <!-- swiper js -->
+    <script src="lib/swiper.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    
+    <title>NutriChefhub | FAQs</title>
+  </head>
+  <body class="text-dmode-olive dark:text-color-white dark:bg-dmode-olive">
+    <header class="dark:bg-dmode-olive">
+      <!-- start of header -->
+
+      <!-- left navbar -->
+      <div class="logo-brand tranform animate-bounce">
+        <a href="index.html" class="logo  dark:text-dmode-lightolive">
+          
+          <h2><i class="fa-solid fa-utensils dark:text-dmode-white"></i> NutriChefHub</h2>
+        </a>
+      </div>
+
+      <!-- right-navbar -->
+      <nav class="navbar bg-color-white lg:bg-transparent dark:bg-dmode-olive">
+        <ul class="nav ">
+          <li><a href="index.html" class="hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive ">Home</a></li>
+          <li class="dropdown">
+            <span class="dropbtn hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive mx-3 py-2 px-4 cursor-pointer">Recipes</span>
+            <div class="dropdown-content">
+              <a href="popular.html">Popular</a>
+              <a href="healthy.html">Healthy</a>
+              <a href="booster.html">Energy Boosting</a>
+            </div>
+          </li>
+          <li><a href="about.html" class=" hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">About</a></li>
+          <li><a href="blogs.html" class="hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">Blogs</a></li>
+          <li><a href="contact.html" class="hover:bg-color-primary hover:text-color-white dark:text-color-white dark:hover:bg-dmode-white dark:hover:text-dmode-olive">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- icons -->
+      <div class="icons">
+        <i id="fa-bars" class="fa-solid fa-bars"></i>
+        <i id="search-icon" class="fas fa-search"></i>
+        <i id="dark-mode" class="fas fa-moon"></i>
+      </div>
+    </header>
+
+    <!-- Search Recipes -->
+    <section>
+      <form action="search.html" id="search-form">
+        <div class="search-bar flex justify-center">
+          <input
+            type="search"
+            placeholder="Search Recipe"
+            text="text"
+            name="search-term"
+            id="search-term"
+          />
+          <button
+            for="search-box"
+            class="fas fa-search text-color-white cursor-pointer text-5xl hover:text-color-primary"
+            class=""
+          ></button>
+          <i class="fas fa-times" id="close"></i>
+        </div>
+      </form>
+    </section>
+
+    <!-- ###########FAQ'S########################## -->
+    <main>
+      <section>
+        <div class="pt-40">
+          <h4 class="text-4xl pb-2 text-center">NutriChefHub's</h4>
+          <h2 class="text-center text-6xl pb-20 font-bold">
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+        </div>
+
+        <div
+          class="container grid lg:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 gap-5 p-4 text-left"
+        >
+          <div>
+            <div class="card col-span-1">
+              <img src="image/faq-img/f1.jpg" alt="" class="card-img-top rounded-xl" />
+              <div>
+                <button>
+                  <h2 id="toggleButtonA" class="font-bold text-4xl py-10 text-center dark:text-dmode-lightolive">
+                    Recipes and Cooking
+                  </h2>
+                </button>
+                <div id="contentA" style="display: none" class="text-left">
+                  <div>
+                    <button
+                      id="toggleButton"
+                      class="text-3xl pb-2 font-bold py-6 text-left dark:text-dmode-lightolive"
+                    >
+                      How can I find recipes on NutriChef?
+                    </button>
+                    <div
+                      id="content"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: You can find recipes on NutriChef by visiting our
+                      website and navigating to the "Recipes" section. There,
+                      you'll find a wide range of healthy and delicious recipes
+                      sorted by categories such as breakfast, lunch, dinner,
+                      snacks, and desserts. You can also use the search bar to
+                      find specific recipes based on ingredients or dietary
+                      preferences.
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton1"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Are the recipes on NutriChef suitable for specific dietary
+                      needs?
+                    </button>
+                    <div
+                      id="content1"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Yes, NutriChef offers a variety of recipes
+                      tailored to different dietary needs. Whether you're
+                      looking for vegetarian, vegan, gluten-free, dairy-free, or
+                      low-carb options, you can find recipes that suit your
+                      preferences. Each recipe includes detailed information
+                      about its ingredients, cooking instructions, and
+                      nutritional facts, making it easy to find meals that align
+                      with your dietary requirements.
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton2"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Can I submit my own recipes to NutriChef?
+                    </button>
+                    <div
+                      id="content2"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Absolutely! NutriChef welcomes recipe submissions
+                      from our community. If you have a healthy and tasty recipe
+                      you'd like to share, you can submit it through our
+                      website. Our team will review the recipe, and if it meets
+                      our guidelines, we may feature it on our platform, giving
+                      you credit as the creator.
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton3"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Are the recipes on NutriChef beginner-friendly?
+                    </button>
+                    <div
+                      id="content3"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Yes, we offer a wide range of recipes suitable for
+                      all skill levels, including beginners. We understand that
+                      everyone has different cooking abilities and strive to
+                      provide recipes that are easy to follow, with clear
+                      instructions and accessible ingredients. You'll find
+                      step-by-step guidance and helpful tips throughout our
+                      recipes to support your culinary journey.
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton4"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Can I save and organize my favorite recipes on NutriChef?
+                    </button>
+                    <div
+                      id="content4"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Absolutely! NutriChef provides a convenient recipe
+                      saving feature. When you create an account on our website,
+                      you can save your favorite recipes to your personal recipe
+                      box. This way, you can easily access and organize your
+                      preferred recipes, allowing you to revisit them whenever
+                      you want.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card col-span-1">
+              <img src="image/faq-img/f2.jpg" alt="" class="card-img-top rounded-xl" />
+              <div>
+                <button>
+                  <h2
+                    id="toggleButtonB"
+                    class="font-bold text-4xl py-10 text-center dark:text-dmode-lightolive"
+                  >
+                    Nutritional Information
+                  </h2>
+                </button>
+                <div id="contentB" style="display: none" class="text-left">
+                  <div>
+                    <button
+                      id="toggleButton5"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Where can I find nutritional information for the recipes
+                      on NutriChef?
+                    </button>
+                    <div
+                      id="content5"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Each recipe on NutriChef includes detailed
+                      nutritional information. When you view a recipe, you'll
+                      find a section that provides the breakdown of calories,
+                      macronutrients (carbohydrates, proteins, and fats),
+                      vitamins, minerals, and other relevant nutritional facts.
+                      This information is based on the ingredients used and the
+                      specified serving size.
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton6"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Can I customize the nutritional information based on my
+                      portion sizes?
+                    </button>
+                    <div
+                      id="content6"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Yes, you can customize the nutritional information
+                      based on your desired portion sizes. NutriChef provides
+                      serving size flexibility, allowing you to adjust the
+                      number of servings and instantly see the updated
+                      nutritional information for each ingredient and the entire
+                      recipe. This feature helps you plan your meals and track
+                      your nutritional intake accurately
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton7"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Are the nutritional facts on NutriChef verified by
+                      professionals?
+                    </button>
+                    <div
+                      id="content7"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: NutriChef strives to provide accurate and reliable
+                      nutritional information. While our team takes great care
+                      in calculating and presenting the nutritional facts, it's
+                      important to note that they are intended for general
+                      informational purposes. We recommend consulting with a
+                      qualified healthcare professional or registered dietitian
+                      if you have specific dietary concerns or medical
+                      conditions.
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton8"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Does NutriChef provide information about allergens in the
+                      recipes?
+                    </button>
+                    <div
+                      id="content8"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Yes, NutriChef understands the importance of
+                      allergen information. Our recipes indicate common
+                      allergens such as nuts, dairy, gluten, and soy. However,
+                      it's essential to review the recipe's ingredient list
+                      carefully to ensure it aligns with your specific allergen
+                      needs or dietary restrictions.
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="toggleButton9"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Can I track my daily nutritional intake on NutriChef?
+                    </button>
+                    <div
+                      id="content9"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Currently, NutriChef does not offer a built-in
+                      feature for tracking daily nutritional intake. However,
+                      you can utilize the nutritional information provided with
+                      each recipe to monitor and manage your overall nutritional
+                      goals. We recommend using external tools or apps dedicated
+                      to tracking nutrition to get a comprehensive overview of
+                      your daily intake.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card col-span-1">
+              <img src="image/faq-img/f3.jpg" alt="" class="card-img-top rounded-xl" />
+              <div>
+            <button>
+                  <h2
+                    id="toggleButtonC"
+                    class="font-bold text-4xl py-10 text-center dark:text-dmode-lightolive"
+                  >
+                    Cooking Tips and Techniques
+                  </h2>
+                </button>
+                <div id="contentC" style="display: none" class="text-left">
+                  <div>
+                    <button
+                      id="toggleButton10"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Does NutriChef offer cooking tips and techniques?
+                    </button>
+                    <div
+                      id="content10"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Yes, NutriChef is committed to helping you become
+                      a better cook. In addition to providing recipes, we also
+                      offer cooking tips and techniques to enhance your culinary
+                      skills. You can find articles, guides, and videos on our
+                      website that cover various cooking methods, ingredient
+                      substitutions, meal planning, and other valuable tips to
+                      support your healthy cooking journey.
+                    </div>
+                  </div>
+                  <!-- Q1 -->
+                  <div>
+                    <button
+                      id="toggleButton11"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Can I ask specific cooking-related questions on NutriChef?
+                    </button>
+                    <div
+                      id="content11"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Absolutely! We encourage you to engage with our
+                      community and ask any cooking-related questions you may
+                      have. You can leave comments on recipe pages, participate
+                      in our discussion forums, or reach out to us through our
+                      contact page. Our team and fellow food enthusiasts are
+                      here to assist you and share their knowledge and
+                      experiences.
+                    </div>
+                  </div>
+                  <!-- Q2 -->
+                  <div>
+                    <button
+                      id="toggleButton12"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Does NutriChef have videos or tutorials on cooking
+                      techniques?
+                    </button>
+                    <div
+                      id="content12"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Yes, NutriChef provides instructional videos and
+                      tutorials on various cooking techniques. You can find them
+                      in our "Cooking Tips" section, where our experts
+                      demonstrate essential cooking skills, such as knife
+                      techniques, sautéing, baking, and more. These videos are
+                      designed to help you improve your culinary prowess and
+                      become more confident in the kitchen.
+                    </div>
+                  </div>
+                  <!-- Q3 -->
+                  <div>
+                    <button
+                      id="toggleButton13"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Are there tips for meal planning and batch cooking on
+                      NutriChef?
+                    </button>
+                    <div
+                      id="content13"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Absolutely! NutriChef recognizes the importance of
+                      meal planning and batch cooking for a healthy lifestyle.
+                      We provide articles and guides on meal planning
+                      strategies, tips for efficient batch cooking, and how to
+                      incorporate nutritious ingredients into your weekly meal
+                      prep. These resources will help you save time, reduce food
+                      waste, and maintain a well-balanced diet.
+                    </div>
+                  </div>
+                  <!-- Q4 -->
+                  <div>
+                    <button
+                      id="toggleButton14"
+                      class="text-3xl pb-2 font-bold py-8 text-left dark:text-dmode-lightolive"
+                    >
+                      Does NutriChef provide information on ingredient
+                      substitutions and alternatives?
+                    </button>
+                    <div
+                      id="content14"
+                      style="display: none"
+                      class="text-2xl pb-2 font-semibold py-8"
+                    >
+                      Answer: Yes, NutriChef offers information on ingredient
+                      substitutions and alternatives. We understand that dietary
+                      preferences and ingredient availability can vary. Our
+                      articles and guides cover common ingredient swaps, such as
+                      replacing dairy or gluten-containing ingredients, offering
+                      suggestions to cater to different dietary needs. We
+                      encourage experimentation and creativity in the kitchen
+                      while making healthier choices. Please note that these
+                      answers are fictional and can be adjusted or expanded to
+                      align with the content and features of your NutriChef
+                      website.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ###########Footer########################## -->
+
+    <footer>
+      <div class="container">
+          <div class="grid grid-cols-1 py-10 gap-10 md:grid-cols-2 lg:grid-cols-4">
+              <div class="col-span-1">
+                <div class="text-center text-dmode-olive">
+                  <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Services</h2>
+                  <a href="faq.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">FAQs</h3></a>
+                  <a href="contact.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Contact Us</h3></a>
+                  <a href="blogs.html"><h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Blogs</h3></a>
+
+              </div>
+              </div>
+              <div class="col-span-1">
+                  <div class="text-center text-dmode-olive">
+                      <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Contact Details</h2>
+                      <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Phone Number: (+63) 988 123 4567</h3>
+                      <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Telephone Number: (02) 846 9564</h3>
+                      <h3 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Email: nutrichefhub@gmail.com</h3>
+                      <h1 class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Address: 2265f Agoncillo St, Malate, Manila, 1004 Metro Manila</h1>
+                  </div>
+
+              </div>
+              <div class="col-span-1">
+                <div class="text-center text-dmode-olive">
+                    <h2 class="text-4xl text- pb-5 dark:text-dmode-lightolive">Legal</h2>
+                    <a href="privacy.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Privacy Policy</p></a>
+                    <a href="licensing.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Licensing</p></a>
+                    <a href="terms.html"><p class="text-2xl border-b-2 dark:border-dmode-lightolive py-3 dark:text-color-white">Terms & Conditions</p></a>
+                </div>
+            </div>
+              <div class="col-span-1">
+                  <div class="text-center text-dmode-olive">
+                      <h2 class="text-4xl pb-5 dark:text-dmode-lightolive">Didn't Join Yet?</h2>
+                      <p class="text-2xl  py-3 dark:text-color-white">Let's create nutritious and healthy recipes together for our community.</p>
+                      <div class="pt-10">
+                        <a href="contact.html" class="text-dmode-olive text-xl py-3 px-3 bg-color-primary rounded-lg border border-color-primary hover:text-color-white dark:bg-color-primary dark:text-color-white hover:dark:bg-color-white hover:dark:text-dmode-olive">Join Our Community</a>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <div class="container py-5 text-dmode-olive">
+          <div class="text-center text-xl dark:text-color-white">
+              <p >Copyright © 2023 | NutriChefHub | Develop by Team MEND | Kodego BootCamp Tropang CharAt64 | All Rights Reserved</p>
+          </div>
+          
+      </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/navigate.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
